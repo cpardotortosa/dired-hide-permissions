@@ -1,4 +1,4 @@
-;;; dired-hide-permissions.el --- Select windows by numbers.
+;;; dired-hide-permissions.el --- Hides permissions block in dired buffers.
 
 (define-minor-mode dired-hide-permissions-mode
   "Toggle visibility of the permission flags in current Direct buffer."
