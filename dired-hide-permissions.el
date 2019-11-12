@@ -19,7 +19,13 @@
         (forward-line 1)))))
 
 (defun dired-hide-permissions-mode-always()
+  (interactive)
   (add-hook 'dired-mode-hook
+            'dired-hide-permissions-mode))
+
+(defun dired-hide-permissions-mode-never()
+  (interactive)
+  (remove-hook 'dired-mode-hook
             'dired-hide-permissions-mode))
 
 (add-hook
